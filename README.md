@@ -1,234 +1,330 @@
-# Xush kelibsiz
-# RO'YXAT Indeksatsiya
+# Ro'yxat indekslari
 
-Uy vazifalari va test topshiriqlarini avtomatik baholash
-- ushbu repository'ni fork qiling
-- vazifani bajaring
-- tegishli xabar bilan commit qiling
-
-# Muammolar
 ## List01
 
-  Natijaga bo'sh ro'yxat qaytaring.
+Bo'sh ro'yxat qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input:
-Output: []
-
+Kirish: 
+Chiqarish: []
 ```
+
+---
 
 ## List02
 
-  Bir nechta elementlardan iborat ro'yxat berilgan. Birinchi elementni qaytaring.
+Allamurod o'rganayotgan fanlar ro'yxati berilgan. Birinchi fanni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1,2,3,4,5]
-Output: 1
-
+Kirish: fanlar=["Python", "Matematika", "Ingliz tili"]
+Chiqarish: "Python"
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=["x", 1, "y", 2, "z", 3]
-Output: "x"
-
-```
-**Cheklovlar:**
-
-  - 1 <= length(list1) <= 10^5
+---
 
 ## List03
 
-  `list1` va `list2` ro'yxatlari berilgan. Ularni qo'shib (birlashtirib) qaytaring.
+Allamurodning ikki javondagi kitoblari ro'yxati list1 va list2 berilgan. Ularni birlashtirib qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 2, 3, 4, 5]  list2=[6, 7, 8, 9, 10]  
-Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+Kirish: list1=["Python asoslari", "Algoritmlar"], list2=["Toza kod"]
+Chiqarish: ["Python asoslari", "Algoritmlar", "Toza kod"]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=["x", 1] list2=["y", 2, "z", 3]
-Output: ["x", 1, "y", 2, "z", 3]
-
-```
-**Cheklovlar:**
-
-  - 1 <= length(list1) <= 10^5
-  - 1 <= length(list2) <= 10^5
+---
 
 ## List04
 
-  Bir nechta elementlardan iborat ro'yxat berilgan. Oxirgi elementni qaytaring.
+Allamurodning oylik daromadlari ro'yxati berilgan. Oxirgi oy daromadini qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 2, 3, 4, 5]
-Output: 5
-
+Kirish: royxat=[6500000, 7200000, 6800000]
+Chiqarish: 6800000
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[5,3,'a',1,2]
-Output: 2
-
-```
-**Cheklovlar:**
-
-  - 1 <= length(list1) <= 10^5
+---
 
 ## List05
 
-  Bir nechta elementlardan iborat ro'yxat berilgan. `i` indeksdagi elementni qaytaring.
+Ro'yxat va indeks i berilgan. i-indeksdagi elementni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 2, 3, 4, 5] i=1
-Output: 2
-
+Kirish: royxat=["Allamurod", "Xakimov", 26, "Toshkent"], i=2
+Chiqarish: 26
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=[5,3,'a',1,2] i=3
-Output: 1
-
+Kirish: royxat=["Allamurod", "Xakimov", 26, "Toshkent"], i=-1
+Chiqarish: "Toshkent"
 ```
-**Cheklovlar:**
 
-  - 1 <= length(list1) <= 10^5
-  - 0 <= i < length(list1)
+---
 
 ## List06
 
-  Uzunligi beshta bo'lgan birliklar va nolalardan iborat ro'yxat berilgan. `1` ni `True` ga o'zgartiring.
+Allamurodning 5 kunlik sport jadvali berilgan: 1 — sport zaliga bordi, 0 — bormadi. Ro'yxatdagi barcha `1` larni `True` ga almashtirib qaytaring (indekslar orqali).
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 0, 0, 0, 0]
-Output: [True, 0, 0, 0, 0]
-
+Kirish: royxat=[1, 0, 1, 1, 0]
+Chiqarish: [True, 0, True, True, 0]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[1, 0, 1, 1, 0]
-Output: [True, 0, True, True, 0]
-
-```
-**Cheklovlar:**
-
-  - length(list1) == 5
+---
 
 ## List07
 
-  Uzunligi beshta bo'lgan birliklar va nolalardan iborat ro'yxat berilgan. `0` ni `False` ga o'zgartiring.
+Allamurodning 5 kunlik sport jadvali berilgan: 1 — sport zaliga bordi, 0 — bormadi. Ro'yxatdagi barcha `0` larni `False` ga almashtirib qaytaring (indekslar orqali).
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 0, 0, 0, 0]
-Output: [1, False, False, False, False]
-
+Kirish: royxat=[1, 0, 1, 1, 0]
+Chiqarish: [1, False, 1, 1, False]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[1, 0, 1, 1, 0]
-Output: [1, False, 1, 1, False]
-
-```
-**Cheklovlar:**
-
-  - length(list1) == 5
+---
 
 ## List08
 
-  Uzunligi beshta bo'lgan birliklar va nolalardan iborat ro'yxat berilgan. `1` ni `True` ga, `0` ni esa `False` ga o'zgartiring.
+Allamurodning 5 kunlik sport jadvali berilgan: 1 — sport zaliga bordi, 0 — bormadi. `1` larni `True` ga, `0` larni `False` ga almashtirib qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 0, 0, 0, 0]
-Output: [True, False, False, False, False]
-
+Kirish: royxat=[1, 0, 1, 1, 0]
+Chiqarish: [True, False, True, True, False]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[1, 0, 1, 1, 0]
-Output: [True, False, True, True, False]
-
-```
-**Cheklovlar:**
-
-  - length(list1) == 5
+---
 
 ## List09
 
-  Bir nechta elementlardan iborat ro'yxat berilgan. Agar barcha elementlar bir xil bo'lsa `True`, aks holda `False` qaytaring.
+Uch elementli ro'yxat berilgan. Agar barcha elementlar bir xil bo'lsa `True`, aks holda `False` qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[0, 0, 0, 0, 0]
-Output: True
-
+Kirish: royxat=[26, 26, 26]
+Chiqarish: True
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=['x', 'x', 'y', 'y', 'z']
-Output: False
-
+Kirish: royxat=[26, 29, 26]
+Chiqarish: False
 ```
-**Cheklovlar:**
 
-  - 1 <= length(list1) <= 10^5
+---
 
 ## List10
 
-  Bir nechta elementlardan iborat sonli ro'yxat berilgan. Birinchi va oxirgi element orasidan eng kattasini qaytaring.
+Sonlar ro'yxati berilgan. Birinchi va oxirgi elementdan kattasini qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[5, 32, 1, 4, 3]
-Output: 5
-
+Kirish: royxat=[6500000, 7200000, 6800000]
+Chiqarish: 6800000
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=[12, 2, 5, 2, 7, 9, 1]
-Output: 12
-
+Kirish: royxat=[9, 1, 5]
+Chiqarish: 9
 ```
-**Cheklovlar:**
 
-  - 1 <= length(list1) <= 10^5
+---
 
-# Ogohlantirish
-- boshqa yechimlarni yoki har qanday yechimni nusxa ko‘chirmang
-- sharhlarni o‘chirib tashlamang
+## List11
+
+Toq sondagi elementlardan iborat ro'yxat berilgan. O'rtadagi elementni `len()` yordamida topib qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma"]
+Chiqarish: "Chorshanba"
 ```
+
+**Misol 2:**
+
+```Python
+Kirish: royxat=[87, 92, 78]
+Chiqarish: 92
+```
+
+---
+
+## List12
+
+Ro'yxat berilgan. Birinchi va oxirgi elementlarning o'rnini almashtirib, ro'yxatni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=["Allamurod", "Python", "Xakimov"]
+Chiqarish: ["Xakimov", "Python", "Allamurod"]
+```
+
+**Misol 2:**
+
+```Python
+Kirish: royxat=[1, 2, 3, 4]
+Chiqarish: [4, 2, 3, 1]
+```
+
+---
+
+## List13
+
+Allamurod haqidagi ma'lumotlar ro'yxati berilgan: [ism, familiya, tug'ilgan yil, shahar]. Yoshni 2026-yil bo'yicha hisoblang va "<ism> <familiya>, <yosh> yosh, <shahar>" satrini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: malumot=["Allamurod", "Xakimov", 2000, "Toshkent"]
+Chiqarish: "Allamurod Xakimov, 26 yosh, Toshkent"
+```
+
+---
+
+## List14
+
+Allamurodning uchta fandan olgan ballari ro'yxati berilgan. O'rtacha balni hisoblang va 1 xona aniqlikda yaxlitlab qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: ballar=[87, 92, 78]
+Chiqarish: 85.7
+```
+
+**Misol 2:**
+
+```Python
+Kirish: ballar=[90, 90, 90]
+Chiqarish: 90.0
+```
+
+---
+
+## List15
+
+Allamurodning to'rt oylik daromadlari ro'yxati berilgan. Ikkinchi element va oxiridan ikkinchi element yig'indisini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=[6500000, 7200000, 6800000, 7000000]
+Chiqarish: 14000000
+```
+
+---
+
+## List16
+
+Sana [kun, oy, yil] ro'yxati ko'rinishida berilgan. Funksiya ichida oy nomlari ro'yxatini yarating ("yanvar", ..., "dekabr") va "<kun>-<oy nomi> <yil>-yil" satrini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: sana=[15, 3, 2000]
+Chiqarish: "15-mart 2000-yil"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: sana=[1, 9, 2026]
+Chiqarish: "1-sentyabr 2026-yil"
+```
+
+---
+
+## List17
+
+Ro'yxat, indeks i va yangi qiymat berilgan. i-indeksdagi elementni yangi qiymatga almashtirib, ro'yxatni qaytaring. Agar indeks chegaradan chiqsa, ro'yxatni o'zgarishsiz qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=["Allamurod", "Samarqand"], i=1, qiymat="Toshkent"
+Chiqarish: ["Allamurod", "Toshkent"]
+```
+
+**Misol 2:**
+
+```Python
+Kirish: royxat=["Allamurod", "Samarqand"], i=5, qiymat="Toshkent"
+Chiqarish: ["Allamurod", "Samarqand"]
+```
+
+---
+
+## List18
+
+Allamurodning 2×2 o'lchamli jadvali — ro'yxat ichidagi ro'yxat berilgan. Bosh diagonal elementlari (`[0][0]` va `[1][1]`) yig'indisini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: jadval=[[1, 2], [3, 4]]
+Chiqarish: 5
+```
+
+**Misol 2:**
+
+```Python
+Kirish: jadval=[[26, 0], [0, 74]]
+Chiqarish: 100
+```
+
+---
+
+## List19
+
+Allamurodning 5 kunlik sport jadvali berilgan: 1 — sport zaliga bordi, 0 — bormadi. Allamurod necha kun sportga borganini `while` sikli va indekslar yordamida hisoblab qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=[1, 0, 1, 1, 0]
+Chiqarish: 3
+```
+
+**Misol 2:**
+
+```Python
+Kirish: royxat=[0, 0, 0, 0, 0]
+Chiqarish: 0
+```
+
+---
+
+## List20
+
+Allamurodning xaridlari ikki ro'yxat bilan berilgan: narxlar va soni (har biri 3 elementli). Indekslar orqali jami xarajatni hisoblab qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: narxlar=[12000, 3000, 95000], soni=[3, 4, 1]
+Chiqarish: 143000
+```
+

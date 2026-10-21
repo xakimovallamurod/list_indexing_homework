@@ -1,10 +1,10 @@
-def main(list1,i):
+def main(royxat, i):
     """
-    A list of several elements is given. i Return the item in the index.
-    Args:
-        list1 (list): parameter
-        i (int): parameter
-    Returns:
-        list: return answer
+    Ro'yxat va indeks i berilgan. i-indeksdagi elementni qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+        i(int): indeks
+    Qaytaradi:
+        any: element
     """
     return

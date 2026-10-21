@@ -1,9 +1,9 @@
-def main(list1):
+def main(royxat):
     """
-    A list of several elements is given. Return the last item.
-    Args:
-        list1 (list): parameter
-    Returns:
-        list: return answer
+    Allamurodning oylik daromadlari ro'yxati berilgan. Oxirgi oy daromadini qaytaring.
+    Argumentlar:
+        royxat(list): daromadlar
+    Qaytaradi:
+        int: natija
     """
     return

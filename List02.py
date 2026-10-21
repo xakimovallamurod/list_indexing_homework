@@ -1,9 +1,9 @@
-def main(list1):
+def main(fanlar):
     """
-    A list of several elements is given. Return the first item.
-    Args:
-        list1 (list): parameter
-    Returns:
-        list: return answer
+    Allamurod o'rganayotgan fanlar ro'yxati berilgan. Birinchi fanni qaytaring.
+    Argumentlar:
+        fanlar(list): fanlar ro'yxati
+    Qaytaradi:
+        str: natija satri
     """
     return

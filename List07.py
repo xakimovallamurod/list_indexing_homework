@@ -1,9 +1,9 @@
-def main(list1):
+def main(royxat):
     """
-    A list of units and zeros with a length of five is given. Replace zero with False.
-    Args:
-        list1 (list): parameter
-    Returns:
-        list: return answer
+    Allamurodning 5 kunlik sport jadvali berilgan: 1 — sport zaliga bordi, 0 — bormadi. Ro'yxatdagi barcha 0 larni False ga almashtirib qaytaring (indekslar orqali).
+    Argumentlar:
+        royxat(list): 5 ta 0 va 1
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

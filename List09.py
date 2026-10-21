@@ -1,9 +1,9 @@
-def main(list1):
+def main(royxat):
     """
-    A list of several elements is given. True if all items are the same, otherwise return False.
-    Args:
-        list1 (list): parameter
-    Returns:
-        bool: return answer
+    Uch elementli ro'yxat berilgan. Agar barcha elementlar bir xil bo'lsa True, aks holda False qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+    Qaytaradi:
+        bool: javob (True yoki False)
     """
     return
